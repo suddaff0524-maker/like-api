@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 def load_tokens(server):
     files = FILES
-    return json.load(open(f"tokens/{files.get(server,'token_bd.json')}"))
+    return json.load(open(f"tokens/{files.get(server,'token_sg.json')}"))
 
 def get_headers(token):
     return {
@@ -73,7 +73,7 @@ def like():
     return jsonify({
         
         
-        "credits":"BHUWAN  ",
+        "credits":"Sudda  ",
         "likes_added": after_like - before_like,
         "likes_before": before_like,
         "likes_after": after_like,
